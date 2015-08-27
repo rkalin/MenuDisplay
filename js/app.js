@@ -14,7 +14,7 @@ menuDisplay.config(['$routeProvider',
     $routeProvider.
       when('/home', {
         templateUrl: 'html/default.html',
-        controller: 'DefaultCtrl'
+        controller: 'UnitListCtrl'
       }).
       when('/sols', {
         templateUrl: 'html/sols.html',
