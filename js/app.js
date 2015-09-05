@@ -13,18 +13,16 @@ menuDisplay.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/home', {
-        templateUrl: 'html/default.html',
+        templateUrl: 'partials/home/home.html',
         controller: 'UnitListCtrl'
-      }).
-      when('/sols', {
+      })
+      .when('/sols', {
         templateUrl: 'html/sols.html',
         controller: 'SolsController'
-      }).
-      when('/sols/:menuId', {
+      })
+      .when('/sols/:menuId', {
         templateUrl: 'html/menus.html',
         controller: 'MenuController'
-      }).
-      otherwise({
-        redirectTo: '/home'
-      });
+      })
+      .otherwise('/home');
 }]);
