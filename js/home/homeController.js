@@ -1,11 +1,8 @@
-'use strict'
-
-/* Controllers */
+/* Home's (main page) controller */
 
 var homeController = angular.module('menuDisplay');
 
 homeController.controller('UnitListCtrl',
-  var self = this;
   function(self, UnitNames) {
     self.menu = UnitMenus.query();
-  }]);
+  });
