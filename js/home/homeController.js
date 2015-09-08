@@ -1,8 +1,5 @@
 /* Home's (main page) controller */
-
-var homeController = angular.module('menuDisplay');
-
-homeController.controller('UnitListCtrl',
-  function(self, UnitNames) {
+angular.module('menuDisplay').controller('UnitListController',
+  function(self, UnitNamesFactory) {
     self.menu = UnitMenus.query();
   });
