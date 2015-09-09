@@ -9,11 +9,11 @@ angular.module('menuDisplay').config(['$routeProvider',
         controller: 'UnitListController'
       })
       .when('/sols', {
-        templateUrl: 'html/sols.html',
+        templateUrl: "partials/sols.html",
         //controller: 'SolsController'
       })
       .when('/sols/:menuId', {
-        templateUrl: 'html/menus.html',
+        templateUrl: "partials/menus.html",
         //controller: 'MenuController'
       })
       .otherwise({redirectTo: '/'});
