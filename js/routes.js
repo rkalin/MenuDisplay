@@ -5,8 +5,8 @@ angular.module('menuDisplay').config(
         redirectTo: '/home'
       })
       .when('/home', {
-        templateUrl: 'partials/home/home.html',
-        //controller: 'UnitList'
+        templateUrl: "partials/home/home.html",
+        controller: 'UnitListController'
       })
       .when('/sols', {
         templateUrl: 'html/sols.html',
