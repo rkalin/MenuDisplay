@@ -1,4 +1,4 @@
-angular.module('menuDisplay').config(
+angular.module('menuDisplay').config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {
@@ -17,4 +17,4 @@ angular.module('menuDisplay').config(
         //controller: 'MenuController'
       })
       .otherwise({redirectTo: '/'});
-});
+}]);
